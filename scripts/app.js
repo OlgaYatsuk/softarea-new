@@ -13675,7 +13675,7 @@ jquery$1('select').each(function () {
 
 var Scroll = function Scroll() {
   var $root = jquery$1('body,html');
-  var $body = jquery$1('body');
+  var $body = jquery$1('.js-scroll-to');
 
   init();
 
