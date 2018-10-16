@@ -13874,6 +13874,23 @@ var Tabs = function Tabs() {
   }
 };
 
+var Language = function Language() {
+  var $currentLang = jquery$1('.js-lang');
+  var $changeLang = jquery$1('.js-lang-hidden');
+  var $arrow = jquery$1('.js-arrow');
+
+  init();
+
+  function init() {
+    $currentLang.on('click', toggleLang);
+  }
+
+  function toggleLang() {
+    jquery$1(this).find($changeLang).slideToggle();
+    jquery$1(this).find($arrow).toggleClass('is-rotated');
+  }
+};
+
 (function () {
   var windowLocation = window.location.search;
   var $hiddenInput = jquery$1('.input-hidden');
@@ -13887,6 +13904,7 @@ var Tabs = function Tabs() {
 Scroll();
 Dropdown();
 Menu();
+Language();
 Tabs();
 Header();
 Policy();
