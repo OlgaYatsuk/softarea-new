@@ -1,0 +1,324 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <title>Softarea</title>
+  <meta name="description" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="./styles/app.css"/>
+
+  <!-- BEGIN scripts -->
+  <script async defer type="text/javascript" src="scripts/app.js"></script>
+
+  <!-- END scripts -->
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!--begin header-->
+<div class="header-wrapper header-wrapper--main">
+  <header class="header container">
+    <a href="index.html" class="logo"><img src="images/logo.svg" alt="softarea" class="logo"></a>
+    <nav class="navigation">
+      <a href="about-us.html" target="_blank" class="navigation__link">About us</a>
+      <a href="services.html" target="_blank" class="navigation__link">Our services</a>
+      <a href="try-now.html" target="_blank" class="navigation__link">Try now</a>
+      <a href="case.html" target="_blank" class="navigation__link">Customer success hub</a>
+      <a href="industries.html" target="_blank" class="navigation__link">Industries</a>
+      <a href="contacts.html" target="_blank" class="navigation__link">Contact us</a>
+    </nav>
+  </header>
+</div>
+<div class="header-hidden">
+  <a href="index.html" class="logo"><img src="images/logo.svg" alt="softarea" class="logo"></a>
+  <button class="js-burger burger-menu__btn"><img src="images/icons/burger.svg" alt="menu"></button>
+  <button class="js-burger-close burger-menu__close"><img src="images/icons/close-green.svg" alt="close"></button>
+</div>
+<header class="js-burger-wrapper container">
+  <div class="burger-menu">
+    <div class="burger-container container">
+      <nav class="navigation js-nav">
+        <a href="index.html" target="_blank" class="navigation__link">Home</a>
+        <a href="about-us.html" target="_blank" class="navigation__link">About us</a>
+        <a href="services.html" target="_blank" class="navigation__link">Our services</a>
+        <a href="try-now.html" target="_blank" class="navigation__link">Try now</a>
+        <a href="case.html" target="_blank" class="navigation__link">Customer success hub</a>
+        <a href="industries.html" target="_blank" class="navigation__link">Industries</a>
+      </nav>
+      <div class="burger-options">
+        <a class="burger__link" href="contacts.html">Contact us</a>
+        <ul class="language js-lang">
+          <li class="button"> No <img src="images/icons/arrow-dropdown.svg" alt="more" class="js-arrow">
+            <ul class="is-hidden js-lang-hidden">
+              <li class="language__option "> En
+            </ul>
+        </ul>
+        <div class="footer-social">
+          <a href="#" class="footer-social__icon">
+            <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.42495 7.31723H4.65327V13.8078H1.96902V7.31723H0.692383V5.03616H1.96902V3.56006C1.96902 2.50448 2.47044 0.851562 4.67716 0.851562L6.66548 0.859881V3.07404H5.22283C4.98619 3.07404 4.65344 3.19227 4.65344 3.69581V5.03829H6.65946L6.42495 7.31723Z"
+                    fill="#009183"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social__icon">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.6881 0.238867C11.2045 0.370285 11.6111 0.757478 11.7491 1.24922C11.9999 2.14049 12 3.99994 12 3.99994C12 3.99994 12 5.85951 11.7492 6.75078C11.6111 7.24241 11.2045 7.62972 10.6882 7.76113C9.75243 8 6 8 6 8C6 8 2.24757 8 1.31175 7.76113C0.795454 7.62972 0.388784 7.24252 0.250796 6.75078C0 5.85951 0 4.00006 0 4.00006C0 4.00006 0 2.14049 0.250796 1.24922C0.388784 0.757478 0.795352 0.370285 1.31165 0.238867C2.24747 0 5.9999 0 5.9999 0C5.9999 0 9.75243 0 10.6881 0.238867ZM7.91745 4.00006L4.79996 5.71429V2.28574L7.91745 4.00006Z"
+                    fill="#009183"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social__icon">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.49844 9.9H0.139976V3.22046H2.49844V9.9ZM1.31944 2.30793H1.30358C0.512687 2.30793 0 1.79528 0 1.15348C0 0.498747 0.527748 0 1.33432 0C2.14097 0 2.63714 0.49861 2.65282 1.15348C2.65282 1.79542 2.14115 2.30793 1.31944 2.30793ZM11 9.9H8.6423V6.32622C8.6423 5.42823 8.30069 4.81549 7.44806 4.81549C6.7958 4.81549 6.40861 5.22887 6.23858 5.62797C6.17558 5.77051 6.15998 5.96987 6.15998 6.16896V9.89986H3.80271C3.80271 9.89986 3.83356 3.84682 3.80271 3.22036H6.16034V4.16733C6.47332 3.7123 7.0326 3.0632 8.28461 3.0632C9.83643 3.0632 11 4.01733 11 6.06993V9.9ZM6.1451 4.18855C6.14912 4.18229 6.15475 4.17476 6.16034 4.16743V4.18855H6.1451Z"
+                    fill="#009183"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--end header-->
+
+<main class="services-page">
+  <!--begin hero-->
+  <section class="hero">
+    <img src="images/backgrounds/services-bg.png" alt="" class="hero__img">
+    <div class="container">
+      <h2 class="hero__slogan">Services</h2>
+      <p class="hero__text">All our customers are our long-term partners. We are very proud of our successful projects. We are ready to share with you our expertise!</p>
+    </div>
+  </section>
+  <!--end hero-->
+
+  <!--begin services-->
+  <section class="services container">
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/analysis.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">Business<br>Analysis</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/analysis.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">Business Analysis</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and offer
+            solution of their business problems.
+            We advise our customers how to solve their problems.
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/big-data.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">BI & Big Data<br>solutions</figcaption>
+      <div class="service-single js-pop-up">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <img src="images/services/big-data.svg" alt="service image" class="services__img">
+        <div class="services__description-article">
+          <h5 class="services__description-heading">BI & Big Data solutions</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and offer
+            solution of their business problems.
+            We advise our customers how to solve their problems.
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/portais.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">Portals<br>solutions</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/portais.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">Portals solutions</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/integration.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">Integration Bus<br>Solutions</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/integration.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">Integration Bus Solutions</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/custom-software.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">Custom Software<br>Development</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/custom-software.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">Custom Software Development</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/data-migr.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">Data<br>Migration<br>solutions</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/data-migr.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">Data Migration solutions</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/mobile.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">Mobile<br>Solutions<br>for Enterprise</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/mobile.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">Mobile Solutions for Enterprise</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/cloud.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">Public and<br>Private Cloud<br>Solutions</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/cloud.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">Public and Private Cloud Solutions</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/high-load.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">High Load &<br>Availability<br>Solutions</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/high-load.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">High Load & Availability Solutions</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+
+    <figure class="services__item js-pop-up-call">
+      <img src="images/services/ecm.svg" alt="service image" class="services__img">
+      <figcaption class="services__item-caption">Enterprise Content<br>Management<br>(ECM) solutions</figcaption>
+      <div class="service-single js-pop-up">
+        <img src="images/services/ecm.svg" alt="service image" class="services__img">
+        <button class="close single-case__close"><img src="images/icons/close-grey.svg" alt="close"></button>
+        <div class="services__description-article">
+          <h5 class="services__description-heading">BI & Big Data solutions</h5>
+          <p class="services__description-text">We make a research of our customers’ business needs, find and
+            We work as business – consultant and partners for customers.</p>
+        </div>
+        <a href="order-now.html" class="button">Order service</a>
+      </div>
+    </figure>
+  </section>
+  <!--end services-->
+</main>
+
+<!--begin footer-->
+<footer class="footer">
+  <div class="footer-top container">
+    <a href="/" class="logo"><img src="images/logo.svg" alt="softarea" class="logo"></a>
+    <nav class="navigation">
+      <a href="about-us.html" target="_blank" class="navigation__link">About us</a>
+      <a href="services.html" target="_blank" class="navigation__link">Our services</a>
+      <a href="try-now.html" target="_blank" class="navigation__link">Try now</a>
+      <a href="case.html" target="_blank" class="navigation__link">Customer success hub</a>
+      <a href="industries.html" target="_blank" class="navigation__link">Industries</a>
+      <a href="contacts.html" target="_blank" class="navigation__link">Contact us</a>
+    </nav>
+  </div>
+
+  <div class="footer-middle container">
+    <div class="contacts">
+      <h6 class="contacts__heading">E-mail</h6>
+      <a href="mailto:market@softarea.com" class="contacts__email">market<br>@softarea.com</a>
+    </div>
+    <div class="contacts contacts--extra-padding">
+      <h6 class="contacts__heading">Head office</h6>
+      <p class="contacts__info">Ukraine, Kyiv, 20 Velyka Zhytomyrska str., Bussiness-center Panorama</p>
+    </div>
+    <div class="contacts">
+      <h6 class="contacts__heading">Phone</h6>
+      <a href="tel:+380959142134" class="contacts__info">+3 8095 914 21 34</a>
+    </div>
+    <ul class="language js-lang">
+      <li class="button"> No <img src="images/icons/arrow-dropdown.svg" alt="more" class="js-arrow">
+        <ul class="is-hidden js-lang-hidden">
+          <li class="language__option "> En
+        </ul>
+    </ul>
+  </div>
+
+  <div class="footer-bottom container">
+    <p class="footer-bottom-section copyrights">Copyright &copy; Softarea <br> All rights reserved</p>
+    <div class="footer-bottom__policy">
+      <a href="" class="policy__link">Terms and Conditions</a>
+      <br><a href="" class="policy__link">Privacy policy</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" class="footer-social__icon">
+        <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.42495 7.31723H4.65327V13.8078H1.96902V7.31723H0.692383V5.03616H1.96902V3.56006C1.96902 2.50448 2.47044 0.851562 4.67716 0.851562L6.66548 0.859881V3.07404H5.22283C4.98619 3.07404 4.65344 3.19227 4.65344 3.69581V5.03829H6.65946L6.42495 7.31723Z"
+                fill="#009183"/>
+        </svg>
+      </a>
+      <a href="#" class="footer-social__icon">
+        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.6881 0.238867C11.2045 0.370285 11.6111 0.757478 11.7491 1.24922C11.9999 2.14049 12 3.99994 12 3.99994C12 3.99994 12 5.85951 11.7492 6.75078C11.6111 7.24241 11.2045 7.62972 10.6882 7.76113C9.75243 8 6 8 6 8C6 8 2.24757 8 1.31175 7.76113C0.795454 7.62972 0.388784 7.24252 0.250796 6.75078C0 5.85951 0 4.00006 0 4.00006C0 4.00006 0 2.14049 0.250796 1.24922C0.388784 0.757478 0.795352 0.370285 1.31165 0.238867C2.24747 0 5.9999 0 5.9999 0C5.9999 0 9.75243 0 10.6881 0.238867ZM7.91745 4.00006L4.79996 5.71429V2.28574L7.91745 4.00006Z"
+                fill="#009183"/>
+        </svg>
+      </a>
+      <a href="#" class="footer-social__icon">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.49844 9.9H0.139976V3.22046H2.49844V9.9ZM1.31944 2.30793H1.30358C0.512687 2.30793 0 1.79528 0 1.15348C0 0.498747 0.527748 0 1.33432 0C2.14097 0 2.63714 0.49861 2.65282 1.15348C2.65282 1.79542 2.14115 2.30793 1.31944 2.30793ZM11 9.9H8.6423V6.32622C8.6423 5.42823 8.30069 4.81549 7.44806 4.81549C6.7958 4.81549 6.40861 5.22887 6.23858 5.62797C6.17558 5.77051 6.15998 5.96987 6.15998 6.16896V9.89986H3.80271C3.80271 9.89986 3.83356 3.84682 3.80271 3.22036H6.16034V4.16733C6.47332 3.7123 7.0326 3.0632 8.28461 3.0632C9.83643 3.0632 11 4.01733 11 6.06993V9.9ZM6.1451 4.18855C6.14912 4.18229 6.15475 4.17476 6.16034 4.16743V4.18855H6.1451Z"
+                fill="#009183"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<!--end footer-->
+</body>
+</html>

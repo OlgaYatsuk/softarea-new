@@ -13747,7 +13747,7 @@ var Policy = function Policy() {
 
   function init() {
     $policySubmit.on('click', hideBlock);
-    if ($policyWindow) {
+    if ($policyWindow.length) {
       $policySubmit.on('click', checkStateCookies);
     }
   }
@@ -13760,8 +13760,46 @@ var Policy = function Policy() {
     Cookies.set('value', 'true');
   }
 
-  if (Cookies.get('value') != 'true') {
-    $policyWindow.show();
+  if ($policyWindow.length) {
+    if (Cookies.get('value') != 'true') {
+      $policyWindow.show();
+    }
+  }
+};
+
+var Modal = function Modal() {
+
+  var $modalWindow = jquery$1('.js-pop-up');
+  var $popupCallBtn = jquery$1('.js-pop-up-call');
+  var $closeBtn = jquery$1('.close');
+  var $vacancy = jquery$1('.vacancies__item');
+
+  init();
+
+  function init() {
+    $popupCallBtn.on('click', showModal);
+    jquery$1(document).on('mousedown', handleDocumentClick);
+    $closeBtn.on('mousedown', hideModal);
+  }
+
+  function showModal() {
+    jquery$1(this).find($modalWindow).stop().fadeIn();
+    $vacancy.css('opacity', '0');
+    jquery$1(this).addClass('is-open');
+    jquery$1(this).css('opacity', '1');
+  }
+
+  function handleDocumentClick(e) {
+    if ($modalWindow.has(e.target).length === 0) {
+      $modalWindow.hide();
+      $vacancy.removeClass('is-open');
+      $vacancy.css('transform', 'translateY(0)');
+      $vacancy.css('opacity', '1');
+    }
+  }
+
+  function hideModal() {
+    jquery$1(this).parent($modalWindow).hide();
   }
 };
 
@@ -13808,6 +13846,34 @@ var Header = function Header() {
   }
 };
 
+var Tabs = function Tabs() {
+  var $tab = jquery$1('.tab-link');
+  var $tabContent = jquery$1('.tab-content');
+
+  init();
+
+  function init() {
+    $tab.on('click', showTab);
+    $tab.on('click', changeContent);
+  }
+
+  function showTab() {
+    $tab.removeClass('is-active');
+    $tabContent.removeClass('is-active');
+
+    jquery$1(this).addClass('is-active');
+  }
+
+  function changeContent(e) {
+    e.preventDefault();
+    var a = jquery$1(this).data('id');
+
+    jquery$1('.js-pop-up-call').each(function () {
+      if (!jquery$1(this).hasClass(a)) jquery$1(this).addClass('hide');else jquery$1(this).removeClass('hide');
+    });
+  }
+};
+
 (function () {
   var windowLocation = window.location.search;
   var $hiddenInput = jquery$1('.input-hidden');
@@ -13821,6 +13887,8 @@ var Header = function Header() {
 Scroll();
 Dropdown();
 Menu();
+Tabs();
 Header();
 Policy();
+Modal();
 //# sourceMappingURL=app.js.map
