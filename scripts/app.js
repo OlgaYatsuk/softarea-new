@@ -13724,13 +13724,14 @@ var Menu = function Menu() {
     $burgerMenu.slideDown(700);
     $burgerMenuIcon.hide();
     $burgerCloseBtn.show();
-    jquery$1('.header-hidden').css('background', 'none');
+    jquery$1('body').addClass('is-static');
   }
 
   function hideMenu() {
     $burgerMenu.slideUp(700);
     $burgerMenuIcon.show();
     $burgerCloseBtn.hide();
+    jquery$1('body').removeClass('is-static');
 
     if (jquery$1(window).width() < 1024) {
       jquery$1('.header-hidden').css('background', 'rgba(255, 255, 255, 0.55)');
